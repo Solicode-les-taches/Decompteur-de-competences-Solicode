@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catalogue des livres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Catalogue de la bibliothèque</h1>
+    <nav>
+      <a href="addbook.html" class="btn-primary2">➕ Ajouter un livre</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <form class="searchbar">
+      <input type="search" id="search" placeholder="Rechercher un livre par titre ou auteur..." class="search-input">
+      <button id="btn-trier" class="btn-primary1">( A -  - Z )</button>
+    </form>
+
+ 
+    <div class="catalogue" id="catalogue"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Livre le plus cher : <span id="livre-cher">Aucun</span></p>
+    <p>Total des livres : <span id="total-livres">0</span></p>
+    <p>Livres disponibles : <span id="livres-disponibles">0</span></p>
+  </footer>
+
+  <script src="catalogue.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("images/imag.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f4f6f9;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(49, 55, 21, 0.85);
+  color: #fff;
+  border-bottom: 2px solid #d16014;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  color: #ffc400;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.btn-primary2 {
+  background-color: #d16014;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.btn-primary2:hover {
+  background-color: #ff7a1f;
+}
+
+
+.container {
+  width: 90%;
+  margin: 120px auto 110px auto;
+}
+
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #313715;
+  font-weight: 600;
+}
+
+.btn-primary1 {
+  background: #313715;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary1:hover {
+  background: #d16014;
+}
+
+
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.carte {
+  background: rgba(49, 55, 21, 0.54);
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carte:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.carte h3 {
+  color: #ffb703;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.carte p {
+  margin: 4px 0;
+  font-size: 1.2rem;
+}
+
+
+.btn-reserver {
+  background-color: #00b300;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-reserver:hover {
+  background-color: #00e000;
+}
+
+.label-reserve {
+  display: inline-block;
+  background-color: #ff5050ad;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.remove {
+  background-color: #e60000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.remove:hover {
+  background-color: #ff3b3b;
+}
+
+
+.form-ajout {
+  padding: 20px;
+  border-radius: 12px;
+  color: #ffc400;
+  width: 100%;
+  max-width: 500px;
+  margin: 140px auto 90px;
+  backdrop-filter: blur(4px);
+  border: 1px solid #fff;
+}
+
+.form-ajout label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.form-ajout input,
+.form-ajout select {
+  background-color: rgba(49, 55, 21, 0.6);
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-ajout select option {
+  background-color: #d16014;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #d16014;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff7a1f;
+}
+
+
+.footer {
+  background-color: rgba(49, 55, 21, 0.9);
+  border-top: 2px solid #d16014;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.footer span {
+  color: #ffc400;
+}
+
+.footer-p {
+  color: #ffc400;
+}
+
+.misage {
+  background-color: #00e000;
+  
+}
